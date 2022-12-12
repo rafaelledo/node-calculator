@@ -6,7 +6,7 @@ const bodyParser = require("body-parser")
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/views/index.html")
 })
 
 app.post("/", function (req, res) {
@@ -17,7 +17,7 @@ app.post("/", function (req, res) {
 })
 
 app.get("/bmiCalculator", function (req, res) {
-    res.sendFile(__dirname + "/bmiCalculator.html")
+    res.sendFile(__dirname + "/views/bmiCalculator.html")
 })
 
 app.post("/bmiCalculator", function (req, res) {
